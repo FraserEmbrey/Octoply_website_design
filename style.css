@@ -1,0 +1,354 @@
+:root {
+  background: #EEF6F7;
+  font: 400 20px system-ui;
+  color: #366163;
+}
+
+.logo h1 {
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#contact_me_by_fax_only {
+  display: none !important;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.tagline {
+  color: #fff;
+  font-weight: 720;
+  margin: 0;
+  font-size: 32px;
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+section + section, .map {
+  margin-top: 96px;
+}
+
+p, h2, h3 {
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 850px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  padding: 16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+}
+.projects h2 {
+  grid-column-end: end;
+}
+
+.hero {
+  background: url("images/hero_1200w.png") center no-repeat;
+  height: 400px;
+  width: 100%;
+  padding: 16px;
+}
+
+.img-carousel {
+  max-width: 100%;
+}
+.img-carousel img {
+  filter: drop-shadow(0 0 10px #0002);
+  max-width: 100%;
+  margin: auto;
+}
+
+input, textarea {
+  font-size: 16px;
+  padding: 20px 0px;
+  border: none;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  background: #EEF6F7;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  color: #000;
+  font-weight: 400;
+  -webkit-appearance: none;
+}
+input:focus, textarea:focus {
+  border-bottom: solid 2px #065959;
+  outline: 0;
+  box-shadow: 0 2px 6px -8px rgba(6, 89, 89, 0.45);
+}
+
+button {
+  -webkit-appearance: none;
+  width: auto !important;
+  height: auto !important;
+  min-width: 120px;
+  border-radius: 24px;
+  text-align: center;
+  padding: 16px 32px;
+  color: #fff !important;
+  margin-top: 5px;
+  background-color: #005f5f !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: none !important;
+  transition: all 0.3s ease;
+  outline: 0;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 6px -1px rgba(6, 89, 89, 0.65);
+}
+button:hover:active {
+  transform: scale(0.95);
+}
+
+.floating__label {
+  position: relative;
+  margin-bottom: 10px;
+}
+.floating__label label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.floating__label input:not(:placeholder-shown), .floating__label textarea:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.floating__label input:not(:placeholder-shown) + label, .floating__label textarea:not(:placeholder-shown) + label {
+  transform: translateY(-14px);
+  opacity: 0.7;
+}
+.floating__label textarea + label {
+  top: 20px !important;
+}
+
+form label {
+  font-size: 12.5px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+#login {
+  display: flex;
+  align-items: center;
+}
+#login .floating__label {
+  margin: 16px;
+}
+#login input {
+  width: 15vw;
+  max-width: 160px;
+}
+
+#contactForm {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  width: 300px;
+}
+#contactForm h3 {
+  margin: 0 0 20px 0;
+}
+#contactForm h3:after {
+  content: "";
+  height: 32px;
+  width: 32px;
+  background-image: url('data:image/svg+xml,<svg fill="currentColor" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z"></path></svg>');
+}
+
+img {
+  width: 100%;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+}
+.map iframe {
+  align-self: center;
+  max-width: 100%;
+  filter: drop-shadow(0 0 10px #0002);
+}
+
+.rh_subDiv {
+  background-color: #EEF6F7 !important;
+  box-shadow: none !important;
+}
+
+@keyframes factsList {
+  10% {
+    content: "octopus live in the sea";
+  }
+  20% {
+    content: "octopus have eight legs";
+  }
+  30% {
+    content: "stay safe";
+  }
+  40% {
+    content: "pi is a number between 3 and 4";
+  }
+  50% {
+    content: "you can monetise anything people create";
+  }
+  60% {
+    content: "octopus are flexible";
+  }
+  70% {
+    content: "nobody cares for the care staff";
+  }
+  80% {
+    content: "some people are made to feel incapable";
+  }
+  90% {
+    content: "the world is getting better";
+  }
+}
+footer {
+  font-size: 16px;
+  margin-top: 72px;
+}
+footer address p {
+  margin-top: 8px;
+  Margin-bottom: 8px;
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 100;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+/*# sourceMappingURL=style.css.map */
